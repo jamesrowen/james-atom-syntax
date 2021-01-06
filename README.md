@@ -1,4 +1,4 @@
-# james-theme-syntax theme
+# james-atom-syntax theme
 
 A short description of your theme.
 
