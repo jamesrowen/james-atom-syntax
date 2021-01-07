@@ -1,5 +1,5 @@
-# james-atom-syntax theme
+# james-atom-syntax
 
-A short description of your theme.
+A syntax theme for Atom, loosely based on atom-material-syntax.
 
-![A screenshot of your theme](https://f.cloud.github.com/assets/69169/2289498/4c3cb0ec-a009-11e3-8dbd-077ee11741e5.gif)
+![A screenshot of your theme](https://user-images.githubusercontent.com/1694056/103891539-e01d3f00-509e-11eb-9e2f-5b1b253b1e9e.png)
