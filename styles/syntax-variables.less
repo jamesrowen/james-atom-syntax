@@ -6,16 +6,11 @@
 // General colors
 @syntax-text-color: @normal-text;
 @syntax-cursor-color: @cursor;
-@syntax-selection-color: lighten(@syntax-background-color, 10%);
+@syntax-selection-color: @selection;
 @syntax-background-color: @bg-color;
 @syntax-comment-color: lighten(@bg-color, 20%);
 
-// Guide colors
-@syntax-wrap-guide-color: @dark-gray;
-@syntax-indent-guide-color: lighten(@syntax-background-color, 2.5%);
-@syntax-invisible-character-color: @gray;
-
-// For find and replace markers
+// For find and replace markers - what are these used for?
 @syntax-result-marker-color: @light-gray;
 @syntax-result-marker-color-selected: white;
 
@@ -25,9 +20,13 @@
 @syntax-gutter-background-color: @syntax-background-color;
 @syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
 
-// For git diff info. i.e. in the gutter
-// these don't seem to be used anywhere?
+// For git diff info. i.e. in the gutter - these don't seem to be used anywhere?
 @syntax-color-renamed: @function-name;
 @syntax-color-added: @quoted-string;
 @syntax-color-modified: @various;
 @syntax-color-removed: @red;
+
+// Guide colors
+@syntax-wrap-guide-color: @dark-gray;
+@syntax-indent-guide-color: lighten(@syntax-background-color, 2.5%);
+@syntax-invisible-character-color: @gray;

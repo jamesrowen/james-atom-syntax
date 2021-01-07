@@ -12,12 +12,15 @@
 @import (less) "styles/languages/ruby";
 
 
-.github-FilePatchView-line--added {
-  background-color: #1aff5b33;
+atom-text-editor .find-result .region {
+  border: 1px solid @find-result-border;
+  background-color: @find-result-bg;
 }
-.github-FilePatchView-line--deleted {
-  background-color: #ff525247;
-}
+
 .github-FilePatchListView-icon.status-modified {
   color: #eccfa3;
+}
+
+.syntax--template .syntax--css {
+  color: @normal-text;
 }
