@@ -24,13 +24,13 @@
         color: fade(@syntax-text-color, 50%);
     }
     .syntax--markup.syntax--heading {
-        color: @blue;
+        color: @function-name;
     }
     .syntax--punctuation.syntax--definition.syntax--begin,
     .syntax--punctuation.syntax--definition.syntax--end {
-        color: @blue;
+        color: @function-name;
     }
     .syntax--punctuation.syntax--definition.syntax--begin + span:not(.syntax--function.syntax--parameter) {
-        color: lighten(@blue, 5%);
+        color: lighten(@function-name, 5%);
     }
 }

@@ -1,27 +1,27 @@
 .syntax--css {
     .syntax--support {
         &.syntax--constant {
-            color: @cyan;
+            color: @punctuation;
         }
 
         &.syntax--property-name {
-            color: @light-teal;
+            color: @css-property;
         }
     }
 
     .syntax--keyword {
         &.syntax--unit {
-            color: @strong-orange;
+            color: @css-unit;
         }
     }
 
     .syntax--constant {
         &.syntax--numeric {
-            color: @light-orange;
+            color: @css-constant;
         }
 
         &.syntax--color {
-            color: @light-orange;
+            color: @css-constant;
 
             .syntax--punctuation {
                 color: currentColor;
@@ -35,16 +35,16 @@
         }
 
         &.syntax--id {
-            color: @purple;
+            color: @keyword;
         }
     }
 
     .syntax--punctuation {
         &.syntax--delimiter {
-            color: @cyan;
+            color: @punctuation;
 
             + .syntax--constant.syntax--numeric:not(.syntax--color) {
-                color: @strong-orange;
+                color: @css-unit;
             }
         }
     }

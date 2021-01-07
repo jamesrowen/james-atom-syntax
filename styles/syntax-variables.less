@@ -5,10 +5,10 @@
 
 // General colors
 @syntax-text-color: @normal-text;
-@syntax-cursor-color: @teal;
+@syntax-cursor-color: @cursor;
 @syntax-selection-color: lighten(@syntax-background-color, 10%);
-@syntax-background-color: @very-dark-gray;
-@syntax-comment-color: lighten(@very-dark-gray, 20%);
+@syntax-background-color: @bg-color;
+@syntax-comment-color: lighten(@bg-color, 20%);
 
 // Guide colors
 @syntax-wrap-guide-color: @dark-gray;
@@ -26,7 +26,8 @@
 @syntax-gutter-background-color-selected: darken(@syntax-background-color, 5%);
 
 // For git diff info. i.e. in the gutter
-@syntax-color-renamed: @blue;
-@syntax-color-added: @green;
-@syntax-color-modified: @orange;
+// these don't seem to be used anywhere?
+@syntax-color-renamed: @function-name;
+@syntax-color-added: @quoted-string;
+@syntax-color-modified: @various;
 @syntax-color-removed: @red;
