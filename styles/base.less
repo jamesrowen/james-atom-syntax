@@ -17,7 +17,7 @@ atom-text-editor {
     }
 
     .cursor-line {
-        background-color: fade(darken(@syntax-background-color, 20%), 20%);
+        background-color: fade(darken(@syntax-background-color, 50%), 40%);
     }
 
     .gutter {
@@ -99,7 +99,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--constant {
-    color: @constant;
+    color: @named-constant;
 
     &.syntax--character.syntax--escape {
         color: @punctuation;
