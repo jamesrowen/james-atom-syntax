@@ -12,15 +12,19 @@
 @import (less) "styles/languages/ruby";
 
 
-atom-text-editor .find-result .region {
-  border: 1px solid @find-result-border;
-  background-color: @find-result-bg;
+atom-text-editor {
+  .find-result .region {
+    border: 1px solid @find-result-border;
+    background-color: @find-result-bg;
+  }
+  .spell-check-misspelling .region {
+    border-color: @error;
+  }
+  .syntax--template .syntax--css {
+    color: @normal-text;
+  }
 }
 
 .github-FilePatchListView-icon.status-modified {
   color: #eccfa3;
-}
-
-.syntax--template .syntax--css {
-  color: @normal-text;
 }

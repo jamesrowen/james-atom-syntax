@@ -17,7 +17,7 @@ atom-text-editor {
     }
 
     .cursor-line {
-        background-color: fade(darken(@syntax-background-color, 50%), 40%);
+        background-color: fade(darken(@syntax-background-color, 30%), 25%);
     }
 
     .gutter {
@@ -147,6 +147,10 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 
 .syntax--string {
     color: @quoted-string;
+
+    .syntax--source.syntax--embedded {
+        color: @various;
+    }
 
     &.syntax--regexp {
         color: @regexp;
@@ -390,7 +394,7 @@ atom-text-editor {
 .bracket-matcher .region {
     border-bottom: 1px solid @syntax-cursor-color;
     box-sizing: border-box;
-    background-color: darken(@syntax-cursor-color, 10%);
+    background-color: darken(@syntax-cursor-color, 15%);
     box-shadow: inset 0 -1px 0 @syntax-cursor-color;
 }
 
