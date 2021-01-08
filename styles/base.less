@@ -141,7 +141,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--invalid.syntax--illegal {
-    background-color: @red;
+    background-color: @error;
     color: @syntax-background-color;
 }
 
@@ -166,6 +166,9 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
 }
 
 .syntax--punctuation {
+    &.syntax--bracket {
+      color: @punctuation;
+    }
     &.syntax--definition {
         &.syntax--comment {
             color: @syntax-comment-color;
@@ -342,7 +345,7 @@ atom-text-editor .search-results .syntax--marker.current-result .region {
     }
 
     &.syntax--deleted {
-        color: @red;
+        color: @error;
     }
 
     &.syntax--italic {
@@ -394,7 +397,7 @@ atom-text-editor {
 .bracket-matcher .region {
     border-bottom: 1px solid @syntax-cursor-color;
     box-sizing: border-box;
-    background-color: darken(@syntax-cursor-color, 15%);
+    background-color: darken(@syntax-cursor-color, 20%);
     box-shadow: inset 0 -1px 0 @syntax-cursor-color;
 }
 
