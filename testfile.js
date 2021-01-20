@@ -1,14 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import Table from './Table';
 
-const CONST_ONE = 55;
+const CONST_ONE = null;
 const powerLevel = 1234;
 const db = new DBClient.Connection.Create(dbOptions);
-
-const columns = [
-  { name: 'EVENT', width: '17%' },
-  { name: 'ITEM', width: '35%' }
-];
 
 export default function Dashboard({ request, setStatus, user }) {
   const [dashData, setDashData] = useState({ videos: {} });
@@ -25,12 +20,8 @@ export default function Dashboard({ request, setStatus, user }) {
   return (
     <div>
       <input type='date' onChange={e => setEventsDate(e.target.value)} />
-      <MetricGroup>
-        {events.map((event, i) => (
-          <MetricMain
-            value={dashData.events ? dashData.events[i].total : '-'}
-          />
-        ))}
+      <MetricGroup class='hello-how-are-you'>
+        {events.map(e => <MetricMain value={e.total + 1234} />)}
       </MetricGroup>
     </div>
   );
@@ -38,12 +29,15 @@ export default function Dashboard({ request, setStatus, user }) {
 
 const MetricGroup = styled.div`
   background-color: ${p => p.color};
-  margin-bottom: .1em;
-
-  @media ${config.media.midSize} {
-    margin-bottom: .2em;
+  @media (min-width: 430px) {
+    margin-bottom: 2em;
   }
 `;
+
+const columns = [
+  { name: 'EVENT', width: '17%' },
+  { name: 'ITEM', width: '35%' }
+];
 
 
 ----------------------------------------------------
