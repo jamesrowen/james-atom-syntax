@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Table from './Table';
 
-const CONST_ONE = null;
-const powerLevel = 1234;
+const regex = /^([a-zA-Z0-9"/' ()&-μ]+)$/;
+const powerLevel = null;
 const db = new DBClient.Connection.Create(dbOptions);
 
 export default function Dashboard({ request, setStatus, user }) {
