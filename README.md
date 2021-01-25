@@ -1,5 +1,7 @@
-# james-atom-syntax
+# Sweatpants Syntax
 
-A syntax theme for Atom, loosely based on atom-material-syntax.
+A comfortable and stylish syntax theme for Atom.
 
-![A screenshot of your theme](https://user-images.githubusercontent.com/1694056/103891539-e01d3f00-509e-11eb-9e2f-5b1b253b1e9e.png)
+Loosely based on [atom-material-syntax](https://github.com/atom-material/atom-material-syntax).
+
+![Sweatpants Syntax Screenshot](https://user-images.githubusercontent.com/1694056/105683622-aa52c580-5ea8-11eb-9ca6-a62534fe5cd5.png)
